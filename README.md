@@ -1,6 +1,6 @@
 # Glasswall Rebuild SDK (Evaluation Version)
 
-Evaluation versions of the Glasswall Rebuild SDK for Linux expires after 30 days.
+Evaluation versions of the Glasswall Rebuild SDK which expires after 30 days.
 
 ## Version
 
