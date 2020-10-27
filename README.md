@@ -26,6 +26,7 @@ For changes applicable to each version [Click Here](https://github.com/filetrust
 - **/libs/extensions** contains libraries (.so) and wrappers that extend the Glasswall  Rebuild capability. This includes:
     - Archive Manager - Provides support for archive file formats.
     - Wrappers - expose Glasswall  Rebuild SDK functionality through Python, C#, JavaScript and Java
+    - Docker - See docker instructions [here](https://github.com/filetrust/sdk-rebuild-eval/tree/master/libs/extensions/wrappers/docker)
 - **/tools/command.line.tool** contains the Glasswall Rebuild Command Line Tool
 - **xsd/** contains XSD schema definitions for the following:
     - Glasswall  Rebuild output XML report
