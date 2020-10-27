@@ -1,4 +1,6 @@
-# Glasswall Rebuild SDK
+# Glasswall Rebuild SDK (Evaluation Version)
+
+Evaluation versions of the Glasswall Rebuild SDK for Linux expires after 30 days.
 
 ## Version
 
@@ -6,7 +8,7 @@ Table below contains the version numbers for the libraries and tools in this rep
 
 | Name                                                 | Current Version |
 |------------------------------------------------------|-----------------|
-| Glasswall  Rebuild (libglasswall.classic.so)         | 1.99            |
+| Glasswall  Rebuild (libglasswall.classic.so)         | 1.118           |
 | Archive Manager (libglasswall.archive.manager.so)    | 0.8             |
 | Glasswall Command Line Tool (glasswallCLI)           | 0.5             |
 
