@@ -20,6 +20,8 @@ For changes applicable to each version [Click Here](https://github.com/filetrust
 
 - For Glasswall  Rebuild SDK documentation [Click Here](https://docs.glasswallsolutions.com/sdk/rebuild).
 - For Glasswall Command Line Tool documentation [Click Here](https://github.com/filetrust/sdk-rebuild/blob/master/tools/command.line.tool/README.md)
+- For Glasswall Rebuild Archive Manager documentation [Click Here] (https://github.com/filetrust/sdk-rebuild-eval/tree/master/libs/extensions/archive.manager)
+- For instructions on how to run Glasswall Rebuild in docker [Click Here](https://github.com/filetrust/sdk-rebuild-eval/tree/master/libs/extensions/wrappers/docker)
 - README files within sub directories of the repository provide more information and guides for specific components.
 
 ## Contents of the repository
