@@ -92,12 +92,40 @@
   </xs:complexType>
 </xs:element>
 
-<xs:element name ="archiveConfig">
+<xs:element name="archiveConfig">
   <xs:complexType>
     <xs:sequence>
-      <xs:any processContents="lax" maxOccurs="unbounded"/>
+      <xs:element name="bmp" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="doc" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="docx" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="emf" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="gif" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="jpeg" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="wav" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="o" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="elf" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="pe" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="mp4" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="mpg" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="pdf" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="png" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="ppt" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="pptx" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="tiff" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="wmf" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="xls" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="xlsx" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="mp3" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="rtf" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="coff" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="zip" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="gz" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="bz2" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="7z" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="rar" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
+      <xs:element name="tar" type="archiveContentManagementFlag" minOccurs="0" maxOccurs="1"  />
     </xs:sequence>
-    <xs:attribute name="defaultCompression" form="unqualified" type="xs:string" />
+    <xs:attribute name="defaultCompression" type="xs:string" />
   </xs:complexType>
 </xs:element>
 
