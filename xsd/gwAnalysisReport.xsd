@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema targetNamespace="http://glasswall.com/namespace" xmlns:mstns="http://glasswall.com/namespace" xmlns="http://glasswall.com/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
 
-	<!-- Definition of ContentGroup elements -->
+	<!-- Definition of ContentGroup elements -->						
 	<xs:element name="ContentItem" msdata:Prefix="gw">
 		<xs:complexType>
 			<xs:sequence>
@@ -20,7 +20,7 @@
 			<xs:sequence>
 				<xs:element ref="ContentItem" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
 			</xs:sequence>	
-			<xs:attribute name="itemCount" form="unqualified" type="xs:integer"/>
+			<xs:attribute name="itemCount" form="unqualified" type="xs:integer"/>			
 		</xs:complexType>
 	</xs:element>
 	
@@ -71,7 +71,7 @@
                 <xs:element name="TechnicalDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
 				<xs:element name="IssueId" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>                
 				<xs:element name="InstanceCount" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-				<xs:element name="RiskLevel" msdata:Prefix="gw" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="RiskLevel" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -176,7 +176,6 @@
 				<xs:element ref="ExtractedItems" msdata:Prefix="gw" minOccurs="1" maxOccurs="1"/>
 				<xs:element ref="ExternalData" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
 			</xs:sequence>
-            <xs:attribute name="engine" form="unqualified" type="xs:string" />
 		</xs:complexType>
 	</xs:element>
 

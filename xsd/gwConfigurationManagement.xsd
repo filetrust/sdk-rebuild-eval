@@ -95,7 +95,7 @@
 <xs:element name ="archiveConfig">
   <xs:complexType>
     <xs:sequence>
-      <xs:any processContents="lax" type="archiveContentManagementFlag" maxOccurs="unbounded"/>
+      <xs:any processContents="lax" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="defaultCompression" form="unqualified" type="xs:string" />
   </xs:complexType>
