@@ -46,6 +46,8 @@ extern "C" {
     GLASSWALL_DLL_API int GWFileToFileProtectAndImport(const wchar_t * inputFilePathName, const wchar_t * outputFilePathName);
     GLASSWALL_DLL_API int GWFileToMemoryProtectAndImport(const wchar_t * inputFilePathName, void **outputFileBuffer, size_t *outputLength);
     GLASSWALL_DLL_API int GWFileToMemoryAnalysisProtectAndExport(const wchar_t * inputFilePathName, void **outputFileBuffer, size_t *outputLength);
+    GLASSWALL_DLL_API int GWMemoryToMemoryAnalysisProtectAndExport(void *inputBuffer, size_t inputBufferLength, void **outputFileBuffer, size_t *outputLength);
+    GLASSWALL_DLL_API int GWMemoryToMemoryProtectAndImport(void *inputBuffer, size_t inputBufferLength, void **outputFileBuffer, size_t *outputLength);
 
     GLASSWALL_DLL_API int GWFileProtectLiteAndReport(wchar_t * inputFilePathName, wchar_t* wcType, void **outputFileBuffer, size_t *outputLength, void **reportFileBuffer, size_t *reportFileBufferLength);
     GLASSWALL_DLL_API int GWFileProtectAndReport(wchar_t * inputFilePathName, wchar_t* wcType, void **outputFileBuffer, size_t *outputLength, void **reportFileBuffer, size_t *reportFileBufferLength);
