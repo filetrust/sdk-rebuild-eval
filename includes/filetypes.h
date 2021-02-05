@@ -43,6 +43,8 @@ typedef enum
 	ft_wav,
 	ft_mpg,
 	ft_coff,
+    ft_json,
+    ft_vbamacros,
 
 	//Supported by an external library
 	ft_zip = 0x100,
@@ -77,7 +79,8 @@ typedef enum
 	ft_cfb,
 	ft_interchangePackage, //The package used to store exported content in Glasswall
 	ft_pdf_core2,  // Required for "hybrid" PDF camera where a wrapper/dummy is required for calls to classic camera before Core2 camera
-	ft_fi
+    ft_fi,
+    ft_pdfContentStream
 } ft_t;
 
 #endif /* FILETYPES_H */
