@@ -14,7 +14,7 @@ Table below contains the version numbers for the libraries and tools in this rep
 
 ### Change Log
 
-For changes applicable to each version [Click Here](https://github.com/filetrust/sdk-rebuild/blob/master/Changelog.md)
+For changes applicable to each published version [Click Here](https://github.com/filetrust/sdk-rebuild-eval/blob/master/Changelog.md)
 
 ## Glasswall Rebuild SDK Documentation
 
