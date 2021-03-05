@@ -8,7 +8,7 @@ Table below contains the version numbers for the libraries and tools in this rep
 
 | Name                                                 | Current Version |
 |------------------------------------------------------|-----------------|
-| Glasswall  Rebuild (libglasswall.classic.so)         | 1.164           |
+| Glasswall  Rebuild (libglasswall.classic.so)         | 1.168           |
 | Archive Manager (libglasswall.archive.manager.so)    | 0.8             |
 | Glasswall Command Line Tool (glasswallCLI)           | 0.7             |
 
