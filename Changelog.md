@@ -1,11 +1,71 @@
-# Glasswall Rebuild SDK - Changelog
-All notable changes to this project will be documented in this file.
+# Glasswall Rebuild Evaluatiobn SDK - Changelog
+All notable changes to this project will be documented in this file. It is only updated persiodically to align with publshed releases or significant updates to this repository.
 
 ## Known Issues
 -	In Export Mode, The UTF-8 encoding has not been applied to all extracted text, which means that some exported text is not UTF-8 compliant.
+-       We have introduced a bug for macho file processing since the last release (1.157) that prevents those files being processed correctly (to be resolved before next ublished version).
+
+# 2021-02-18
+
+### Rebuild v1.157
+
+#### General Remarks
+
+This release contains a number of bug fixes across several supported file types. It has one planned improvement for geotiff processing and several Public Preview functions 
+
+#### Bug Fixes
+
+- Stability fixes - a number of fixes for crashes identified during penetration testing.
+- Bug 114107 - Empty stream causing crash in DOC
+- Bug 107044 - Prevent malicious GIF causing segmentation fault
+- Bug 114068 - OLE link not sanitised in OOXML
+- Bug 114508 - Fixed memory leak when importing a file that is not an archive
+- Bug 114675 - Correct where big endian TIFF files were being written out as little endian and corrupting the file.
+
+#### Other Improvements
+
+- Content management for Geotiff files. Geotiff metadata can now be removed from geotiff files. The dafult for this switch is sanitise so users should add the following to their policy files is they wish to keep geotiff metadata:
+```
+    <tiffConfig>
+      <geotiff>allow</geotiff>
+    </tiffConfig>
+```
+- Header file clean up. 
+
+#### Public Preview Functions
+
+This release contains early versions of functionality that is being developed to improve the flexibility of the Rebuild SDK. Whilst we continue to work on these features we would gladly appreciate any feedback on what is currently available.
+
+- Lite mode for xls and pdf. This mode implements a content management policy only regeneration mode for xls and similar for pdf although some remediations are still done. Notes on how to use this API can be found at https://docs.glasswallsolutions.com/sdk/rebuild/Content/API/Glasswall%20Document%20Processing%20-%20File%20to%20Memory%20Location.htm#GWFilePr3
+- Digital signatures content management switch for pdf.  Within the pdf content management section the new switch <digital_signatures> is now avialable. Permitted settings are "allow" and "disallow". The default is disallow to match previous behaviour. If allow is set then the digital signatures are output to the regenerated file but will now be invalid because of changes to the file caused by Rebuild.
+
+## 2020-12-01
+
+### Rebuild v1.127
+
+#### General Remarks
+
+This release contains one bug fix for displaying tiff within ooxml that also resolves segmentation faults experienced by linux users. 
+
+#### Bug Fixes
+
+- Bug 110508 - Fix TIF Image not displaying after protect modes. Also resolves segmentation faults for some TIFF images within Office Open xml.
 
 
-## 2020-11-12
+## 2020-11-30
+
+### Rebuild v1.125
+
+#### General Remarks
+
+This release contains one bug fix for the jpeg file type. 
+
+#### Bug Fixes
+
+- Bug 113059 - Added additional validation on JPEG MCU dimensions to stop some crashes
+
+
+## 2020-11-23
 
 ### Rebuild v1.124
 
