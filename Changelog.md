@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file. It is only 
 -	In Export Mode, The UTF-8 encoding has not been applied to all extracted text, which means that some exported text is not UTF-8 compliant.
 -       We have introduced a bug for macho file processing since the last release (1.157) that prevents those files being processed correctly (to be resolved before next ublished version).
 
+# 2021-03-15
+
+### Rebuild v1.171
+
+#### PDF Change
+
+This release contains a pre-release version of digital signature sanitisation for pdf. The policy setting <digital_signatures></digital_signatures> can be set to allow to pass the signature through unchanged, sanitsiee to remove the signature and disallow to prevent the file from being regenerated. The default behaviour is sanitise so if you wish to keep the previous behaviour of not regenerating the file then a setting of disallow is required. 
+
 # 2021-02-18
 
 ### Rebuild v1.157
