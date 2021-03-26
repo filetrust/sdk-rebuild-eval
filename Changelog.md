@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file. It is only 
 
 ## Known Issues
 -	In Export Mode, The UTF-8 encoding has not been applied to all extracted text, which means that some exported text is not UTF-8 compliant.
--       We have introduced a bug for macho file processing since the last release (1.157) that prevents those files being processed correctly (to be resolved before next ublished version).
+-       Some minor regression issues for DOC files in this build becasue of Lite camera changes
 
 # 2021-03-15
 
