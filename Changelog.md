@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file. It is only 
 -	In Export Mode, The UTF-8 encoding has not been applied to all extracted text, which means that some exported text is not UTF-8 compliant.
 -       Some minor regression issues for DOC files in this build becasue of Lite camera changes
 
-# 2021-03-15
+# 2021-04-16
+
+### Rebuild v1.197
+
+#### Lite Modes
+
+This release now includes the Lite modes for all office cameras (binary and ooxml). these are currently being QA'd but are expected to in the next full production release.
 
 ### Rebuild v1.171
 
