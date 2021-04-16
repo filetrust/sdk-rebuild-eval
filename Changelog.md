@@ -13,6 +13,8 @@ All notable changes to this project will be documented in this file. It is only 
 
 This release now includes the Lite modes for all office cameras (binary and ooxml). these are currently being QA'd but are expected to in the next full production release.
 
+# 2021-03-31
+
 ### Rebuild v1.171
 
 #### PDF Change
